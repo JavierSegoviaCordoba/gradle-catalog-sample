@@ -22,9 +22,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:network"))
-    implementation(project(":features:user-detail"))
-    implementation(project(":features:users"))
+    implementation(projects.core.network)
+    implementation(projects.features.userDetail)
+    implementation(projects.features.users)
 
     implementation(libs.android.activity)
     implementation(libs.android.appcompat)

@@ -1,6 +1,8 @@
 
 rootProject.name = "gradle-catalog-sample"
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
