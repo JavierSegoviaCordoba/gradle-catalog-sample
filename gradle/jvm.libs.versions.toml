@@ -1,0 +1,14 @@
+[versions]
+retrofit = "2.9.0"
+
+[libraries]
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+retrofit-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+
+[bundles]
+network = [
+    "coroutines",
+    "retrofit-retrofit",
+    "retrofit-moshi"
+]

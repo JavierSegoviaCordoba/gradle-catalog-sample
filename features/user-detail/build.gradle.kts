@@ -20,5 +20,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.bundles.feature)
+    implementation(androidLibs.bundles.feature)
 }

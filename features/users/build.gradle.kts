@@ -20,6 +20,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.bundles.feature)
-    implementation(libs.android.recyclerView)
+    androidLibs.apply {
+        implementation(bundles.feature)
+        implementation(recyclerView)
+    }
 }

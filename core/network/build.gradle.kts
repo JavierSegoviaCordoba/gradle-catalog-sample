@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.bundles.network)
+    implementation(jvmLibs.bundles.network)
 }

@@ -22,13 +22,20 @@ android {
 }
 
 dependencies {
-    implementation(projects.core.network)
-    implementation(projects.features.userDetail)
-    implementation(projects.features.users)
+    projects.apply {
+        implementation(core.network)
 
-    implementation(libs.android.activity)
-    implementation(libs.android.appcompat)
-    implementation(libs.android.material)
+        features.apply {
+            implementation(userDetail)
+            implementation(users)
+        }
+    }
 
-    implementation(libs.retrofit.retrofit)
+    androidLibs.apply {
+        implementation(activity)
+        implementation(appcompat)
+        implementation(material)
+    }
+
+    jvmLibs.apply { implementation(retrofit.retrofit) }
 }

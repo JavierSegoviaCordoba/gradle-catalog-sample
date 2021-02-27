@@ -10,6 +10,17 @@ dependencyResolutionManagement {
         google()
         gradlePluginPortal()
     }
+
+    versionCatalogs {
+        create("androidLibs") {
+            from(files("gradle/shared.versions.toml"))
+            from(files("gradle/android.libs.versions.toml"))
+        }
+        create("jvmLibs") {
+            from(files("gradle/shared.versions.toml"))
+            from(files("gradle/jvm.libs.versions.toml"))
+        }
+    }
 }
 
 include(":app")
