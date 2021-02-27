@@ -20,8 +20,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.android.appcompat)
-    implementation(libs.coroutines.core)
-    implementation(libs.android.fragment)
-    implementation(libs.android.material)
+    implementation(libs.bundles.feature)
 }
