@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
-    implementation(Libs.appcompat)
-    implementation(Libs.coroutinesAndroid)
-    implementation(Libs.fragment)
-    implementation(Libs.material)
+    implementation(libs.android.appcompat)
+    implementation(libs.coroutines.core)
+    implementation(libs.android.fragment)
+    implementation(libs.android.material)
 }

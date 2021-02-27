@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation(Libs.coroutines)
-    implementation(Libs.retrofit)
-    implementation(Libs.retrofitMoshi)
+    implementation(libs.coroutines.core)
+    implementation(libs.retrofit.retrofit)
+    implementation(libs.retrofit.moshi)
 }

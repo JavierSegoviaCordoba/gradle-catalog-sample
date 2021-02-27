@@ -26,9 +26,9 @@ dependencies {
     implementation(project(":features:user-detail"))
     implementation(project(":features:users"))
 
-    implementation(Libs.activity)
-    implementation(Libs.appcompat)
-    implementation(Libs.material)
+    implementation(libs.android.activity)
+    implementation(libs.android.appcompat)
+    implementation(libs.android.material)
 
-    implementation(Libs.retrofit)
+    implementation(libs.retrofit.retrofit)
 }

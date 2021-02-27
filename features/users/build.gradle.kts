@@ -20,9 +20,13 @@ android {
 }
 
 dependencies {
-    implementation(Libs.appcompat)
-    implementation(Libs.coroutinesAndroid)
-    implementation(Libs.fragment)
-    implementation(Libs.material)
-    implementation(Libs.recyclerView)
+    libs.apply {
+        android.apply {
+            implementation(appcompat)
+            implementation(fragment)
+            implementation(material)
+            implementation(recyclerView)
+        }
+        coroutines.apply { implementation(android) }
+    }
 }
